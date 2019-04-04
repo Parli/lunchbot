@@ -34,6 +34,7 @@ struct SlackRequest: Content {
 
 struct SlackResponse: Content {
     let text: String
+    let response_type: String = "in_channel"
     let attachments: [SlackAttachment]
 }
 struct SlackAttachment: Content {
