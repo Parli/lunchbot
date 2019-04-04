@@ -5,5 +5,5 @@ workflow "New workflow" {
 
 action "build" {
   uses = "actions/docker/cli@master"
-  runs = "build -f web.Dockerfile ."
+  args = "build -f web.Dockerfile ."
 }
