@@ -28,5 +28,7 @@ COPY --from=builder /build/lib/* /usr/lib/
 # Uncomment the next line if you are using Leaf
 #COPY --from=builder /app/Resources ./Resources
 ENV ENVIRONMENT=$env
+ENV HOSTNAME=0.0.0.0
+ENV PORT=80
 
-ENTRYPOINT ./Run serve --env $ENVIRONMENT --hostname 0.0.0.0 --port 80
+ENTRYPOINT ./Run serve --env $ENVIRONMENT --hostname $HOSTNAME --port $PORT

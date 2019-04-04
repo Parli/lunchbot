@@ -1,6 +1,10 @@
-.git
+*.xcodeproj
+.DS_Store
 .build
 DerivedData
-Package.resolved
-*.xcodeproj
+Packages
+xcuserdata
 
+# Additionals
+.git
+web.Dockerfile
