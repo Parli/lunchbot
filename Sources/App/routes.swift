@@ -28,13 +28,13 @@ public func routes(_ router: Router) throws {
 
 
 let restaurants: [Restaurant] = [
-    Restaurant(name: "Banh Mi", open: Day.all),
-    Restaurant(name: "Pho", open: Day.all.without(.monday)),
-    Restaurant(name: "Sushi", open: Day.all.without(.monday)),
-    Restaurant(name: "🌮🔔", open: Day.all),
-    Restaurant(name: "KFC", open: Day.all),
-    Restaurant(name: "Sajj", open: Day.all),
-    Restaurant(name: "Karaage Burger", open: Day.all.without(.monday).without(.tuesday)),
-    Restaurant(name: "Zen Noodle", open: Day.all),
-    Restaurant(name: "Thai", open: Day.all)
+    Restaurant(name: "Banh Mi", cuisine: .vietnamese),
+    Restaurant(name: "Pho", cuisine: .vietnamese, open: Day.all.without(.monday)),
+    Restaurant(name: "Sushi", cuisine: .japanese, open: Day.all.without(.monday)),
+    Restaurant(name: "🌮🔔", cuisine: .mexican),
+    Restaurant(name: "KFC", cuisine: .american),
+    Restaurant(name: "Sajj", cuisine: .mediterranean),
+    Restaurant(name: "Karaage Burger", cuisine: .japanese, open: Day.all.without(.monday).without(.tuesday)),
+    Restaurant(name: "Zen Noodle", cuisine: .chinese),
+    Restaurant(name: "Thai", cuisine: .thai)
 ]

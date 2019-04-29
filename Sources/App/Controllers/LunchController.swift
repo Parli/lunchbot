@@ -13,7 +13,7 @@ struct LunchController {
                 return SlackResponse(text: "Nothing is open!?", attachments: [])
             }
 
-            return SlackResponse(text: pick.name, attachments: [])
+            return SlackResponse(text: "\(pick.name) (\(pick.cuisine))", attachments: [])
         }
     }
 }
