@@ -9,6 +9,24 @@ struct Restaurant {
         case mediterranean
         case thai
         case chinese
+        case salad
+        case pizza
+        case soup
+        case indian
+        case hawaiian
+        case burgers
+        case burmese
+        case sandwiches
+        case breakfast
+        case ramen
+        case seafood
+        case italian
+        case peruvian
+        case korean
+        case poke
+        case asian
+        case german
+        case salvadorian
     }
 
     let name: String
